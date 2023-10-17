@@ -8,7 +8,7 @@ $(document).ready(function() {
             parseBio(data);
             $("#cards").removeClass("d-none");
         }
-    })
+    });
 });
 
 function parseBio(data) {
@@ -17,16 +17,16 @@ function parseBio(data) {
         const name = value.name;
         const id = value.id;
         output += `
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xs-3 col-md-3 mb-4">
                 <div class="card border-primary border-left shadow">
                     <div class="card-body border-primary border-left">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div id="user-id" class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                    ${id}
+                                    ${name}
                                 </div>
                                 <div id="user-name" class="h5 mb-0 font-weight-light">
-                                    ${name}
+                                    ${id}
                                 </div>
                             </div>
                         </div>
